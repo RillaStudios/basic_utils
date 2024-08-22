@@ -270,7 +270,7 @@ extension StringExt on String? {
     return this!.split(' ').map((word) => word.toLowerCase()).join('_');
   }
 
-  /// Converts a readable date back to a DateTime'.
+  /// Converts a readable date back to a DateTime.
   ///
   /// ### Example:
   ///
@@ -326,7 +326,7 @@ extension StringExt on String? {
     throw Exception('Invalid date format');
   }
 
-  /// Converts a readable time back to a DateTime'.
+  /// Converts a readable time back to a DateTime.
   ///
   /// ### Example:
   ///
