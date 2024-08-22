@@ -11,12 +11,15 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/to/develop-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+BasicUtils is a Flutter package desiged to implement helpful utilities to make the development process quicker and easier.
 
-## Features
+## Features/Utilities
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+<h3>Strings</h3>
+
+<h3>Numbers (int & doubles)</h3>
+
+<h3>Doubles</h3>
 
 ## Getting started
 

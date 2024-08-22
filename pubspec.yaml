@@ -1,7 +1,10 @@
 name: basic_utils
-description: "A new Flutter package project."
-version: 0.0.1
-homepage:
+description: "BasicUtils is a Flutter package desiged to implement helpful utilities to make the development process quicker and easier."
+version: 1.0.0
+homepage: https://rillastudios.ca/
+repository: https://github.com/RillaStudios/basic_utils
+issue_tracker: https://github.com/RillaStudios/basic_utils/issues
+funding: [https://www.buymeacoffee.com/izaakford]
 
 environment:
   sdk: ^3.6.0-149.3.beta
@@ -10,6 +13,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  intl: ^0.19.0
 
 dev_dependencies:
   flutter_test:
