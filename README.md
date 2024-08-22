@@ -20,13 +20,12 @@ BasicUtils is a Flutter package desiged to implement helpful utilities to make t
 <ul>
     <li>
         isNullOrEmpty() - Returns a bool whether this string is null or empty.
-
-        ``` dart
+    </li>
+            ``` dart
         String? str = 'Hi';
 
         str.isNullOrEmpty();
         ```
-    </li>
 
 </ul>
 
