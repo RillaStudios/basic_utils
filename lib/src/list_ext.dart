@@ -24,7 +24,9 @@ extension ListExt on List? {
 
     List<List<T>> chunks = [];
     for (int i = 0; i < this!.length; i += size) {
-      chunks.add((this!.sublist(i, i + size > this!.length ? this!.length : i + size) as List<T>));
+      chunks.add(
+          (this!.sublist(i, i + size > this!.length ? this!.length : i + size)
+              as List<T>));
     }
 
     return chunks;
@@ -80,7 +82,8 @@ extension ListExt on List? {
     }
 
     if (this!.any((element) => element is! num)) {
-      throw Exception('Cannot get the median of a list that contains non-numeric elements');
+      throw Exception(
+          'Cannot get the median of a list that contains non-numeric elements');
     }
 
     List<T> sorted = List.from(this as List<T>)..sort();
@@ -105,7 +108,8 @@ extension ListExt on List? {
     }
 
     if (this!.any((element) => element is! num)) {
-      throw Exception('Cannot get the average of a list that contains non-numeric elements');
+      throw Exception(
+          'Cannot get the average of a list that contains non-numeric elements');
     }
 
     num sum = this!.sum();
@@ -125,7 +129,8 @@ extension ListExt on List? {
     }
 
     if (this!.any((element) => element is! num)) {
-      throw Exception('Cannot get the sum of a list that contains non-numeric elements');
+      throw Exception(
+          'Cannot get the sum of a list that contains non-numeric elements');
     }
 
     List<T> sorted = List.from(this as List<T>);
@@ -145,7 +150,8 @@ extension ListExt on List? {
     }
 
     if (this!.any((element) => element is! num)) {
-      throw Exception('Cannot get the range of a list that contains non-numeric elements');
+      throw Exception(
+          'Cannot get the range of a list that contains non-numeric elements');
     }
 
     List<T> sorted = List.from(this as List<T>);
