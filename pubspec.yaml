@@ -1,6 +1,6 @@
 name: basic_utils
 description: "BasicUtils is a Flutter package desiged to implement helpful utilities to make the development process quicker and easier."
-version: 1.0.0
+version: 1.0.1
 homepage: https://rillastudios.ca/
 repository: https://github.com/RillaStudios/basic_utils
 issue_tracker: https://github.com/RillaStudios/basic_utils/issues
