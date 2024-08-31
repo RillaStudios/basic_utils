@@ -150,6 +150,14 @@ It adds extra methods to data types which can be useful when writing your progra
 
 - previousMonth()
 
+- monthString()
+
+- dayOfWeekString()
+
+- nextMonthString()
+
+- previousMonthString()
+
 ## 📋 Getting started
 
 To use this package, add Basic_Utils as a dependency in your pubspec.yaml file.

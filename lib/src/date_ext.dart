@@ -206,7 +206,49 @@ extension DateExt on DateTime {
   ///
   /// ### Example:
   ///
+  /// DateTime(2021, 8, 9).previousMonth() will return DateTime(2021, 7, 9).
+  ///
   int previousMonth() {
     return month > 1 ? month - 1 : 12;
+  }
+
+  /// Returns a String representing the month.
+  ///
+  /// ### Example:
+  ///
+  /// DateTime(2021, 8, 9).monthString() will return 'August'.
+  ///
+  String monthString() {
+    return DateFormat.MMMM().format(this);
+  }
+
+  /// Returns a String representing the day of the week.
+  ///
+  /// ### Example:
+  ///
+  /// DateTime(2021, 8, 9).dayOfWeekString() will return 'Monday'.
+  ///
+  String dayOfWeekString() {
+    return DateFormat.EEEE().format(this);
+  }
+
+  /// Returns a String representing the next month.
+  ///
+  /// ### Example:
+  ///
+  /// DateTime(2021, 8, 9).nextMonthString() will return 'September'.
+  ///
+  String nextMonthString() {
+    return DateFormat.MMMM().format(DateTime(year, nextMonth()));
+  }
+
+  /// Returns a String representing the previous month.
+  ///
+  /// ### Example:
+  ///
+  /// DateTime(2021, 8, 9).previousMonthString() will return 'July'.
+  ///
+  String previousMonthString() {
+    return DateFormat.MMMM().format(DateTime(year, previousMonth()));
   }
 }
