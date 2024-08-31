@@ -1,9 +1,9 @@
-name: basicutils
-description: "BasicUtils is a Flutter package desiged to implement helpful utilities to make the development process quicker and easier."
+name: ext_utils
+description: "ExtUtils is a Flutter package desiged to implement helpful utilities to make the development process quicker and easier."
 version: 1.0.0
 homepage: https://rillastudios.ca/
-repository: https://github.com/RillaStudios/basic_utils
-issue_tracker: https://github.com/RillaStudios/basic_utils/issues
+repository: https://github.com/RillaStudios/ext_utils
+issue_tracker: https://github.com/RillaStudios/ext_utils/issues
 funding: [https://www.buymeacoffee.com/izaakford]
 
 environment:

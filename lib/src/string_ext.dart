@@ -1,4 +1,4 @@
-part of 'package:basicutils/basic_utils.dart';
+part of 'package:ext_utils/ext_utils.dart';
 
 /// Extension on [String] to add useful methods.
 ///
@@ -44,8 +44,7 @@ extension StringExt on String? {
   ///
   String capitalizeFirst() {
     if (isNullOrEmpty()) {
-      throw Exception(
-          'Cannot capitalize the first letter of a null or empty string');
+      throw Exception('Cannot capitalize the first letter of a null or empty string');
     }
 
     return this!.substring(0, 1).toUpperCase() + this!.substring(1);
@@ -59,8 +58,7 @@ extension StringExt on String? {
   ///
   String capitalizeFirstEach() {
     if (isNullOrEmpty()) {
-      throw Exception(
-          'Cannot capitalize the first letter of each word of a null or empty string');
+      throw Exception('Cannot capitalize the first letter of each word of a null or empty string');
     }
 
     return this!.split(' ').map((word) => word.capitalizeFirst()).join(' ');
@@ -213,8 +211,7 @@ extension StringExt on String? {
       return false;
     }
 
-    return RegExp(r'^\d{10}$').hasMatch(this!) ||
-        RegExp(r'^\d{3}-\d{3}-\d{4}$').hasMatch(this!);
+    return RegExp(r'^\d{10}$').hasMatch(this!) || RegExp(r'^\d{3}-\d{3}-\d{4}$').hasMatch(this!);
   }
 
   ///Removes all whitespace from the string.
@@ -256,11 +253,7 @@ extension StringExt on String? {
       throw Exception('Cannot convert a null or empty string to camel case');
     }
 
-    return this!
-        .split(' ')
-        .map((word) => word.capitalizeFirst())
-        .join()
-        .replaceFirst(this![0], this![0].toLowerCase());
+    return this!.split(' ').map((word) => word.capitalizeFirst()).join().replaceFirst(this![0], this![0].toLowerCase());
   }
 
   /// Converts the string to snake case.

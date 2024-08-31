@@ -1,4 +1,4 @@
-import 'package:basicutils/basic_utils.dart';
+import 'package:ext_utils/ext_utils.dart';
 import 'package:flutter/material.dart';
 
 void main() {
