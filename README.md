@@ -11,7 +11,10 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/to/develop-packages).
 -->
 
-BasicUtils is a Flutter package desiged to implement helpful utilities to make the development process quicker and easier.
+BasicUtils is a simple Flutter package desiged to implement helpful utilities to make the development process quicker and easier.
+It adds extra methods to data types which can be useful when writing your programs/apps.
+
+See Features for a list of methods added based off the data type.
 
 ## Features
 
@@ -19,98 +22,135 @@ BasicUtils is a Flutter package desiged to implement helpful utilities to make t
 
 - isNullOrEmpty()
 
-  - Description: Returns whether this string is null or empty.
-  - Returns: bool
-
 - equalsIgnoreCase()
-
-  - Description: Determines weather a string is equal to another string ignoring the case.
-  - Returns: bool
 
 - capitalizeFirst()
 
-  - Description: Capitalizes the first letter of the string.
-  - Returns: String
-
 - capitalizeFirstEach()
-
-  - Description: Capitalizes the first letter of each word in the string.
-  - Returns: String
 
 - includes()
 
-  - Description: Returns whether this string contains the given [pattern].
-  - Note: More efficient than naive contains method.
-  - Returns: bool
-
 - includesIgnoreCase()
-
-  - Description: Returns whether this string contains the given [pattern] ignoring the case.
-  - Returns: bool
 
 - isNumeric()
 
-  - Description: Returns weather this string contains only numbers.
-  - Returns: bool
-
 - isEmail()
-
-  - Description: Returns whether this string is formatted as a valid email address.
-  - Returns: bool
 
 - isUrl()
 
-  - Description: Returns whether this string is formatted as a valid URL.
-  - Returns: bool
-
 - isPhoneNumber()
-
-  - Description: Returns whether this string is formatted as a valid phone number.
-  - Returns: bool
 
 - removeWhitespace()
 
-  - Description: Removes all whitespace from the string.
-  - Returns: String
-
 - reverse()
-
-  - Description: Reverses the string.
-  - Returns: String
 
 - toCamelCase()
 
-  - Description: Converts the string to camel case.
-  - Returns: String
-
 - toSnakeCase()
 
-  - Description: Converts the string to snake case.
-  - Returns: String
-
 - toSnakeCase()
-
-  - Description: Converts the string to snake case.
-  - Returns: String
 
 - toDate()
 
-  - Description: Converts a readable date back to a DateTime.
-  - Returns: String
-
 - toDateWithTime()
-
-  - Description: Converts a readable date back to a DateTime.
-  - Returns: String
 
 - toTime()
 
-  - Description: Converts a readable time back to a DateTime.
-  - Returns: String
-
 <h3>Numbers (int & doubles)</h3>
 
+- roundToNearestMultiple(int multipleOf)
+
+- floorToNearestMultiple(int multipleOf)
+
+- percentOf(num total)
+
+- percentOfAsString(num total)
+
 <h3>Doubles</h3>
+
+- isEven()
+
+- isOdd()
+
+- toCurrencyString({String symbol = '\$', int decimalPlaces = 2})
+
+- toCurrency()
+
+<h3>Map</h3>
+
+- isNullOrEmpty()
+
+- invert()
+
+- mapValues<K, V>(V Function(V) transform)
+
+- mapKeys<K, V>(V Function(V) transform)
+
+- merge<K, V>(Map<K, V> other, {bool? keepFirst})
+
+- addEntry({required key, required value})
+
+- removeEntry(key)
+
+- get(K key, {V? defaultValue})
+
+<h3>List</h3>
+
+- isNullOrEmpty()
+
+- chunk<T>(int size)
+
+- distinct<T>()
+
+- flatten<T>()
+
+- median<T extends num>()
+
+- average()
+
+- sum<T extends num>()
+
+- range<T extends num>()
+
+<h3>DateTime</h3>
+
+- isToday()
+
+- isYesterday()
+
+- isTomorrow()
+
+- isPast()
+
+- isFuture()
+
+- isSameYear(DateTime date)
+
+- isSameMonth(DateTime date)
+
+- isSameDay(DateTime date)
+
+- isWeekend()
+
+- isWeekday()
+
+- startOfDay()
+
+- endOfDay()
+
+- toReadableDate({bool? includeYear, bool? shortMonth})
+
+- toReadableDateWithTime({bool? includeYear, bool? shortMonth})
+
+- toReadableTime()
+
+- nextDay()
+
+- previousDay()
+
+- nextMonth()
+
+- previousMonth()
 
 ## Getting started
 

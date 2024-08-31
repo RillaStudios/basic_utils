@@ -23,10 +23,22 @@ extension DoubleExt on double {
     return truncate().isOdd;
   }
 
+  /// Returns the currency representation of this number.
+  ///
+  /// ### Example:
+  ///
+  /// 5.33.toCurrencyString() will return '\$5.33'.
+  ///
   String toCurrencyString({String symbol = '\$', int decimalPlaces = 2}) {
     return '$symbol${toStringAsFixed(decimalPlaces)}';
   }
 
+  /// Returns the currency representation of this number as a double.
+  ///
+  /// ### Example:
+  ///
+  /// 5.33345.toCurrency() will return 5.33.
+  ///
   double toCurrency() {
     return double.parse(toStringAsFixed(2));
   }

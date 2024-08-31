@@ -192,7 +192,7 @@ extension DateExt on DateTime {
     return subtract(const Duration(days: 1));
   }
 
-  /// Returns the next month.
+  /// Returns an int representing the next month.
   ///
   /// ### Example:
   ///
@@ -202,7 +202,7 @@ extension DateExt on DateTime {
     return month < 12 ? month + 1 : 1;
   }
 
-  /// Returns the previous month.
+  /// Returns an int representing the previous month.
   ///
   /// ### Example:
   ///

@@ -85,4 +85,72 @@ extension MapExt on Map? {
 
     return result;
   }
+
+  /// Adds a key-value pair to the map if the key is not already present.
+  ///
+  /// ### Parameters:
+  ///
+  /// - [key]: The key to add.
+  /// - [value]: The value to add.
+  ///
+  /// ### Example:
+  ///
+  /// {'a': 1}.addEntry(key: 'b', value: 2) will return {'a': 1, 'b': 2}.
+  ///
+  void addEntry({required key, required value}) {
+    if (isNullOrEmpty()) {
+      throw Exception('Cannot add an entry to a null or empty map');
+    }
+
+    if (!this!.containsKey(key)) {
+      this![key] = value;
+
+      return;
+    }
+
+    throw Exception('Key $key already present in map');
+  }
+
+  /// Removes a key-value pair from the map.
+  ///
+  /// ### Parameters:
+  ///
+  /// - [key]: The key to remove.
+  ///
+  /// ### Example:
+  ///
+  /// {'a': 1, 'b': 2}.removeEntry('a') will return {'b': 2}.
+  ///
+  void removeEntry(key) {
+    if (isNullOrEmpty()) {
+      throw Exception('Cannot remove an entry from a null or empty map');
+    }
+
+    if (this!.containsKey(key)) {
+      this!.remove(key);
+
+      return;
+    }
+
+    throw Exception('Key $key not present in map');
+  }
+
+  /// Gets a value from the map, or returns a default value if the key is not present.
+  ///
+  /// ### Parameters:
+  ///
+  /// - [key]: The key to get the value for.
+  /// - [defaultValue]: The default value to return if the key is not present.
+  ///
+  /// ### Example:
+  ///
+  /// {'a': 1}.get('a', 2) will return 1.
+  ///
+  V? get<K, V>(K key, {V? defaultValue}) {
+    if (isNullOrEmpty()) {
+      throw Exception('Cannot get a value from a null or empty map');
+    }
+
+    return this!.containsKey(key) ? this![key] : defaultValue;
+  }
 }
