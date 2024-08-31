@@ -7,7 +7,7 @@ environment:
   sdk: ^3.6.0-149.3.beta
 
 dependencies:
-  basic_utils:
+  basicutils:
     path: ../
   flutter:
     sdk: flutter

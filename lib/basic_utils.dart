@@ -1,4 +1,4 @@
-library basic_utils;
+library basicutils;
 
 import 'package:intl/intl.dart';
 

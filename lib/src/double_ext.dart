@@ -1,4 +1,4 @@
-part of 'package:basic_utils/basic_utils.dart';
+part of 'package:basicutils/basic_utils.dart';
 
 /// Extension on [double] to add useful methods.
 ///
