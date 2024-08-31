@@ -37,7 +37,8 @@ extension MapExt on Map? {
       throw Exception('Cannot map values of a null or empty map');
     }
 
-    return Map.fromEntries(this!.entries.map((e) => MapEntry(e.key, transform(e.value))));
+    return Map.fromEntries(
+        this!.entries.map((e) => MapEntry(e.key, transform(e.value))));
   }
 
   /// Apply a transformation to the keys of the map.
@@ -51,7 +52,8 @@ extension MapExt on Map? {
       throw Exception('Cannot map keys of a null or empty map');
     }
 
-    return Map.fromEntries(this!.entries.map((e) => MapEntry(transform(e.key), e.value)));
+    return Map.fromEntries(
+        this!.entries.map((e) => MapEntry(transform(e.key), e.value)));
   }
 
   /// Merge two maps.

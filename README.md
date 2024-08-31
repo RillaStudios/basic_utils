@@ -11,7 +11,7 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/to/develop-packages).
 -->
 
-BasicUtils is a simple Flutter package desiged to implement helpful utilities to make the development process quicker and easier.
+ExtUtils is a simple Flutter package desiged to implement helpful utilities to make the development process quicker and easier.
 It adds extra methods to data types which can be useful when writing your programs/apps.
 
 ## ✅ Features
@@ -160,28 +160,28 @@ It adds extra methods to data types which can be useful when writing your progra
 
 ## 📋 Getting started
 
-To use this package, add Basic_Utils as a dependency in your pubspec.yaml file.
+To use this package, add ExtUtils as a dependency in your pubspec.yaml file.
 
 ```dart
 dependencies:
-  basic_utils: ^1.0.0
+  ext_utils: ^1.0.0
 ```
 
 Import the package
 
 ```dart
-import 'package:basic_utils/basic_utils.dart';
+import 'package:ext_utils/ext_utils.dart';
 ```
 
 ## ℹ️ Additional information
 
 <h3>🪄 Feature request?</h3>
 
-Have an idea to make this package even better? Tell us on the <a href="https://github.com/RillaStudios/basic_utils/discussions">BasicUtils discussion page (GitHub)</a>
+Have an idea to make this package even better? Tell us on the <a href="https://github.com/RillaStudios/ext_utils/discussions">ExtUtils discussion page (GitHub)</a>
 
 <h3>🪲 Found a bug?</h3>
 
-Please report all bugs or issues on the <a href="https://github.com/RillaStudios/basic_utils/issues">BasicUtils issues page (GitHub)</a>
+Please report all bugs or issues on the <a href="https://github.com/RillaStudios/ext_utils/issues">ExtUtils issues page (GitHub)</a>
 
 We encourage you to report anything package related to the GitHub repository pages as any and all input will help make this package even better in future versions!
 

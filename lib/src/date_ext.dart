@@ -22,7 +22,9 @@ extension DateExt on DateTime {
   ///
   bool isYesterday() {
     final yesterday = DateTime.now().subtract(const Duration(days: 1));
-    return yesterday.year == year && yesterday.month == month && yesterday.day == day;
+    return yesterday.year == year &&
+        yesterday.month == month &&
+        yesterday.day == day;
   }
 
   /// Returns if the date is tomorrow.
@@ -33,7 +35,9 @@ extension DateExt on DateTime {
   ///
   bool isTomorrow() {
     final tomorrow = DateTime.now().add(const Duration(days: 1));
-    return tomorrow.year == year && tomorrow.month == month && tomorrow.day == day;
+    return tomorrow.year == year &&
+        tomorrow.month == month &&
+        tomorrow.day == day;
   }
 
   /// Returns if the date is in the past.
@@ -138,7 +142,8 @@ extension DateExt on DateTime {
     if (includeYear == false) {
       dateFormat = shortMonth == true ? DateFormat.MMMd() : DateFormat.MMMMd();
     } else {
-      dateFormat = shortMonth == true ? DateFormat.yMMMd() : DateFormat.yMMMMd();
+      dateFormat =
+          shortMonth == true ? DateFormat.yMMMd() : DateFormat.yMMMMd();
     }
 
     return dateFormat.format(this);
@@ -154,9 +159,13 @@ extension DateExt on DateTime {
     DateFormat dateFormat;
 
     if (includeYear == false) {
-      dateFormat = shortMonth == true ? DateFormat.MMMd().add_jm() : DateFormat.MMMMd().add_jm();
+      dateFormat = shortMonth == true
+          ? DateFormat.MMMd().add_jm()
+          : DateFormat.MMMMd().add_jm();
     } else {
-      dateFormat = shortMonth == true ? DateFormat.yMMMd().add_jm() : DateFormat.yMMMMd().add_jm();
+      dateFormat = shortMonth == true
+          ? DateFormat.yMMMd().add_jm()
+          : DateFormat.yMMMMd().add_jm();
     }
 
     return dateFormat.format(this);
