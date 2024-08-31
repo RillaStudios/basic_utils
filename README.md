@@ -14,11 +14,9 @@ and the Flutter guide for
 BasicUtils is a simple Flutter package desiged to implement helpful utilities to make the development process quicker and easier.
 It adds extra methods to data types which can be useful when writing your programs/apps.
 
-See Features for a list of methods added based off the data type.
+## ✅ Features
 
-## Features
-
-<h3>Strings</h3>
+<h3>🔤 Strings</h3>
 
 - isNullOrEmpty()
 
@@ -56,7 +54,7 @@ See Features for a list of methods added based off the data type.
 
 - toTime()
 
-<h3>Numbers (int & doubles)</h3>
+<h3>🔢 Numbers (int & doubles)</h3>
 
 - roundToNearestMultiple(int multipleOf)
 
@@ -66,7 +64,7 @@ See Features for a list of methods added based off the data type.
 
 - percentOfAsString(num total)
 
-<h3>Doubles</h3>
+<h3>#️⃣ Doubles</h3>
 
 - isEven()
 
@@ -76,7 +74,7 @@ See Features for a list of methods added based off the data type.
 
 - toCurrency()
 
-<h3>Map</h3>
+<h3>🗺️ Map</h3>
 
 - isNullOrEmpty()
 
@@ -94,7 +92,7 @@ See Features for a list of methods added based off the data type.
 
 - get(K key, {V? defaultValue})
 
-<h3>List</h3>
+<h3>🗒️ List</h3>
 
 - isNullOrEmpty()
 
@@ -112,7 +110,7 @@ See Features for a list of methods added based off the data type.
 
 - range<T extends num>()
 
-<h3>DateTime</h3>
+<h3>🗓️ DateTime</h3>
 
 - isToday()
 
@@ -152,22 +150,35 @@ See Features for a list of methods added based off the data type.
 
 - previousMonth()
 
-## Getting started
+## 📋 Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+To use this package, add Basic_Utils as a dependency in your pubspec.yaml file.
 
 ```dart
-const like = 'sample';
+dependencies:
+  basic_utils: ^1.0.0
 ```
 
-## Additional information
+Import the package
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```dart
+import 'package:basic_utils/basic_utils.dart';
+```
+
+## ℹ️ Additional information
+
+<h3>🪄 Feature request?</h3>
+
+Have an idea to make this package even better? Tell us on the <a href="https://github.com/RillaStudios/basic_utils/discussions">BasicUtils discussion page (GitHub)</a>
+
+<h3>🪲 Found a bug?</h3>
+
+Please report all bugs or issues on the <a href="https://github.com/RillaStudios/basic_utils/issues">BasicUtils issues page (GitHub)</a>
+
+We encourage you to report anything package related to the GitHub repository pages as any and all input will help make this package even better in future versions!
+
+## 🚀 Support
+
+Enjoying this package? Consider supporting my work. Your contributions will allow me to keep creating and sharing valuable content and innovative projects.
+
+<a href="https://www.buymeacoffee.com/izaakford" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="60px" width="217px"></a>

@@ -2,6 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:basic_utils/basic_utils.dart';
 
 void main() {
+  final now = DateTime.now();
+
+  bool today = now.isToday(); // true
+
+  debugPrint('Today: $today');
+
   runApp(const MainApp());
 }
 
